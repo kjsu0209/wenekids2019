@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wenikids</title>
+</head>
+<body>
+    <% include ../public/header.html %>
+    <%if (usertype){%>
+        <h1><%-username%> 선생님 반갑습니다!</h1>
+    <% }else{%>
+        <h1><%-username%> 학부모님 반갑습니다!</h1>
+    <%}%>
+    <a href="/auth/logout">로그아웃</a>
+</body>
+</html>

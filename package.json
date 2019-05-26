@@ -1,0 +1,27 @@
+{
+  "name": "wenikids_web",
+  "version": "1.0.0",
+  "description": "website for wenikids",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm teststart",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjsu0209/wenikids_SCD_web.git"
+  },
+  "author": "kimjungsoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjsu0209/wenikids_SCD_web/issues"
+  },
+  "homepage": "https://github.com/kjsu0209/wenikids_SCD_web#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "e": "0.0.4",
+    "firebase": "^5.10.1",
+    "firebase-admin": "^7.3.0",
+    "firebaseui": "^3.6.0"
+  }
+}

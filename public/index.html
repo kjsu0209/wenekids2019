@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Wenikids!</title>
+
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>위니키즈</h1>
+        </div>
+        <div class="card">
+            <div class="button" onclick="SignUp()" onmouseover="this.style.backgroundColor='orange'" onmouseout="this.style.backgroundColor= 'rgb(5, 114, 41)'" >회원가입</div>
+            <div class="button" onclick="SignIn()" onmouseover="this.style.backgroundColor='orange'" onmouseout="this.style.backgroundColor= 'rgb(5, 114, 41)'" >로그인</div>
+        </div>
+    </div>
+</body>
+<script>
+    function SignUp(){
+        location.href = "/auth/register";
+    }
+    function SignIn(){
+        location.href="/auth/login";
+    }
+</script>
+</html>

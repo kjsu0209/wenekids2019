@@ -1,0 +1,40 @@
+<p class='err'><%-err%></p>
+<form>
+    <label for="teacher">
+    <input type="radio" name="user_type" id="teacher" value="teacher" checked onclick="Check(0)">선생님</label>
+    <label for="parent">
+    <input type="radio" name="user_type" id="parent" value="parent" onclick="Check(1)">학부모</label>
+</form>
+<form id="register" action="/auth/register" method="POST">
+
+</form>
+
+<script>
+    var radio = document.getElementById('teacher');
+    var form_reg = document.getElementById('register');
+    if(radio.checked){
+        Check(0);
+    }
+    function Check(num){
+        var str = "<label for='name'>이름</label><input type='text' name='name' id='name'><br>";
+        str += "<label for='Id_no'>아이디</label><input type='email' name='Id_no' id='Id_no'><br>";
+        str += "<label for='password'>비밀번호</label><input type='password' name='password' id='password'><br>";            
+        str += "<label for='kinder_name'>유치원</label><input type='text' name='kinder_name' id='kinder_name'><br>";
+        str += "<label for='phone'>연락처</label><input type='text' name='phone' id='phone'><br>";
+       
+        if( num == 0){
+            str += "<label for='class'>분반</label><input type='text' name='class' id='class'><br>";
+        }
+        else{
+            str += "<label for='address'>주소</label><input type='text' name='address' id='address'><br>";
+            str += "<label for='kid_name'>자녀 이름</label><input type='text' name='kid_name' id='kid_name'><br>";
+            str += "<label for='kid_class'>자녀 분반</label><input type='text' name='kid_class' id='kid_class'><br>";
+            str += "<label for='num'>학번</label><input type='text' name='num' id='num'><br>";
+            str += "<label for='age'>나이</label><input type='text' name='age' id='age'><br>";
+            str += "<label for='sex'>성별</label><select name='sex'><option value='m'>남자</option><option value='f'>여자</option></select><br>";
+        }
+        str += "<input type='submit' value='제출'>"
+        form_reg.innerHTML = str;
+
+    }
+</script>
