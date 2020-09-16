@@ -21,7 +21,7 @@
 - Node.js express
 - Firebase
 - Google Cloud Firestore (NoSQL DB)
-- Google Cloud Maps API
+- Daum Map API
 - KT IoTMakers
 
 
